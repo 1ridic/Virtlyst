@@ -36,4 +36,4 @@ COPY --from=build /usr/local /usr/local
 COPY --from=build /root/src/root /var/www/root
 COPY --from=build /root/src/build/src/libVirtlyst.so /usr/local/lib
 
-CMD ["cutelystd4-qt6", "--application", "/usr/local/lib/libVirtlyst.so", "--chdir2", "/var/www", "--static-map", "/static=root/static", "--http-socket", "80", "--master", "--using-frontend-proxy"]
+CMD ["cutelystd4-qt6", "--application", "/usr/local/lib/libVirtlyst.so", "--chdir2", "/var/www", "--static-map", "/static=root/static", "--http-socket", "127.0.2.1:10001", "--master", "--using-frontend-proxy"]
