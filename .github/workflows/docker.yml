@@ -23,7 +23,7 @@ jobs:
         uses: docker/metadata-action@v5
         with:
           images: |
-            dantti/virtlyst
+            1ridic/virtlyst
           flavor: |
             latest=false
           tags: |
